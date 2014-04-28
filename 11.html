@@ -1,0 +1,55 @@
+<!DOCTYPE HTML> 
+<html lang="en_UK"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>SVG</title> 
+</head> 
+<body> 
+<form id="respond"> 
+<fieldset> 
+<legend>Leave a comment</legend> 
+<div> 
+<label>Name: 
+<input name="name" pattern="[0-9][A-Z]{3}" title="Single digit followed by three uppercase letters." type="text" placeholder="Your name" required autofocus> 
+</label> 
+</div> 
+<div> 
+<label>Email: 
+<input name="email" type="email" placeholder="Your email address" required> 
+</label> 
+</div> 
+<div> 
+<label>URL: 
+<input name="url" type="url" placeholder="Your website"> 
+</label> 
+</div> 
+<div> 
+<label>Your Comment: 
+<textarea name="comment"></textarea> 
+</label> 
+</div> 
+
+<label>Your favorite fruit: 
+<datalist id="fruits"> 
+<select name="fruits"> 
+<option value="Blackberry">Blackberry</option> 
+<option value="Blackcurrant">Blackcurrant</option> 
+<option value="Blueberry">Blueberry</option> 
+<!-- … --> 
+</select> 
+If other, please specify: 
+</datalist> 
+<input type="text" name="fruit" list="fruits" multiple> 
+</label> 
+
+<br>
+<input type="search" name="search">
+
+
+<div> 
+<input name="submit" type="submit" value="Submit" formnovalidate formaction="comments.php"> 
+</label> 
+</div> 
+</fieldset></form> 
+</body> 
+</html> 

@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8" /> 
+<title>Styling Unknown Elements - 1</title> 
+<style> 
+time 
+{ 
+font-style: italic; 
+} 
+</style> 
+<script> 
+(function(){if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,canvas,
+datalist,details,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,
+progress,section,time,video".split(','),i=e.length;while(i--)
+{document.createElement(e[i])}})() 
+</script>
+</head> 
+<body> 
+<nav> 
+	<h2 class="a11y">Main navigation</h2> 
+	<ul>
+		<li><a href="/">Home</a></li> 
+		<li><a href="/blog/">Weblog</a></li> 
+		<li><a href="/about/">About</a></li> 
+		<li><a href="/contact/">Contact</a></li> 
+	</ul> 
+</nav>
+<aside class="sidenote"> 
+	<p><em>Sectioning root</em> elements are <code>&lt;blockquote&gt;</code>, 
+	<code>&lt;body&gt;</code>, <code>&lt;details&gt;</code>, <code>&lt;fieldset&gt;</code>, 
+	<code>&lt;figure&gt;</code>, and <code>&lt;td&gt;</code></p> 
+</aside> 
+<article> 
+	<h1>Heading</h1> 
+	<section> 
+		<h2>Section heading</h2> 
+		<p>Content</p> 
+	</section> 
+	<section> 
+		<h2>Section heading</h2> 
+		<p>Content</p> 
+	</section> 
+	<section> 
+		<h2>Section heading</h2> 
+		<p>Content</p> 
+	</section> 
+</article> 
+
+</body> 
+</html> 
